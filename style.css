@@ -1,5 +1,6 @@
 /*FONT*/
-@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');/*ROOT*/
+@import url('https://fonts.googleapis.com/css2?family=Cabin&family=Signika:wght@300&family=Work+Sans:wght@800&display=swap');
+/*ROOT*/
 *{
     margin: 0;
     padding: 0;
@@ -11,15 +12,15 @@
 }
 :root{
     /*Fonts*/
-    --font--one:'Merriweather Sans', sans-serif;
-    --font--two:'Source Sans Pro', sans-serif;
-    --font--three:'Raleway', sans-serif;
+    --font--one:'Work Sans', sans-serif;
+    --font--two:'Cabin', sans-serif;
+    --font--three:'Signika', sans-serif;
     /*Colors*/
-    --color-one:#18181b;
-    --color-two:#27272a;
-    --color-three:#3f3f46;
-    --color-four:#52525b;
-    --color-five:#f4f4f5;
+    --color-one:#F2F2F2;
+    --color-two:#3084F2;
+    --color-three:#B6CAF2;
+    --color-four:#3976F2;
+    --color-five:#886FBF;
     /*FONT-COLOR*/
     --font-color:#f4f4f5;
     --font-color-2:#a1a1aa;
@@ -27,4 +28,295 @@
 }
 body{
     background-color: var(--color-one);
+}
+/*Section-1*/
+.box-pat{
+    display: flex;
+    justify-content: center;
+    margin: 10vh 5vh 10vh 5vh;
+}
+.box{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--color-two);
+    border:0px solid;
+    border-radius: 9px;
+    box-shadow: 5px 5px 50px 10px rgba(77, 77, 77, 0.281);
+    flex-wrap: nowrap;
+}
+.box-left{
+    width: 30%;
+    background-color:var(--color-three);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 1em;
+    border:0px solid;
+    border-radius: 9px 0px 0px 9px;
+}
+.logo-t4xt{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #27272a;
+    font-family: var(--font--one);
+    font-size: 1.2rem;
+}
+.logo-t4xt>img{
+    width: 150px;
+}
+.img-botis{
+    width: 100%;
+    display: flex;
+}
+.bottom-img{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.bottom-img>img{
+    width: 75%;
+}
+/*Box-Right*/
+.box-right{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-one);
+    border: 0px solid;
+    border-radius: 0px 9px 9px 0px;
+}
+.box-title{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    color: var(--font-color);
+    font-size: 1.2em;
+}
+.form-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+}
+.name-last{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.name-first-div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 5px 10px 5px 10px;
+}
+.name-first-div>input{
+    background-color: var(--color-three);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-first-div>input:hover{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-first-div>:focus{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-first-div>::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+}
+.name-second-div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 5px 10px 5px 10px;
+}
+.name-second-div>input{
+    background-color: var(--color-three);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-second-div>input:hover{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-second-div>:focus{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-second-div>::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+}
+.name-second-div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 5px 10px 5px 10px;
+}
+.name-mid-div{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    padding: 5px 10px 5px 10px;
+}
+.name-mid-div-chld{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.name-mid-div-chld>input{
+    background-color: var(--color-three);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld>input:hover{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld>:focus{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld>::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+}
+.name-mid-div-chld-2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    align-items: baseline;
+}
+.name-mid-div-chld-2>input{
+    background-color: var(--font-color-3);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld-2>input:hover{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld-2>:focus{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld-2>::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+}
+.checksum{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    margin: 0px 25px 0px 0px;
+}
+.check{
+    background-color: var(--color-three);
+    padding: 10px 5px 10px 5px;
+    margin: 0px 25px 0px 0px;
+    border: 0px solid;
+    border-radius: 7px;
+    width: 100%;
+    display: flex;
+    color: #F2F2F2;
+}
+.check>input{
+    background-color: var(--color-three);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.check:hover{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.check>:focus{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.check>::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+}
+.hot{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+.hot>input{
+    background-color: var(--color-three);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.hot>input:hover{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.hot>:focus{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.hot>::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+}
+
+
+
+@media only screen and (max-width: 1200px) {
+.box{
+    flex-direction:column ;
+}
+.box-left{
+    width: 100%;
+}
+
+
 }

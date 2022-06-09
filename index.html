@@ -4,19 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/logo/favico.svg">
     <title>HC Business</title>
 </head>
 <body>
     <main>
-        <div class="box">
-            <div class="child-box">
-                <div class="form-boX">
-                    <div class="form-text">
-                        
+        <div class="box-pat">
+            <div class="box">
+                <div class="box-left">
+                    <div class="logo-t4xt">
+                        <img src="./assets/logo/favico.svg" alt="LOGO">
+                        <p>HC COMPANY</p>
                     </div>
-                    <div class="form-fields"></div>
+                    <div class="img-botis">
+                        <div class="bottom-img">
+                            <img src="./assets/logo/adsf.svg" alt="woman phone">
+                        </div>
+                    </div>
                 </div>
-            <div class="child-box"></div>
+                <div class="box-right">
+                    <div class="form-box">
+                        <div class="box-title">
+                            <p>Registration Form</p>
+                        </div>
+                        <div class="name-last">
+                            <div class="name-first-div">
+                                <label for="#name">Firstname</label>
+                                <input type="text" placeholder="Firstname">
+                            </div>
+                            <div class="name-second-div">
+                                <label for="#last">Lastname</label>
+                                <input type="text" placeholder="Lastname">
+                            </div>
+                        </div>
+                        <div class="name-mid-div">
+                            <div class="name-mid-div-chld">
+                                <label for="#id">ID Number</label>
+                                <input type="number">
+                            </div>
+                            <div class="name-mid-div-chld-2">
+                                <div class="checksum">
+                                    <label for="#check">DDD</label>
+                                    <select class="check" name="select">
+                                        <option value="valor1">Valor 1</option>
+                                        <option value="valor2" selected>Valor 2</option>
+                                        <option value="valor3">Valor 3</option>
+                                    </select>
+                                </div>
+                                <div class="hot">
+                                    <label for="#numberid">Mobile Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="123-45-678" 
+                                    pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required>
+                                </div>
+                            </div>
+                            <div class="box-word">
+                                <p>Are you a HC user?</p>
+                            </div>
+                            <div class="name-mid-div-chld-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1">YES</label>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2">NO</label><br>
+                            </div>
+                            <div class="box-word">
+                                <p>How satisfied are you with ou services?</p>
+                            </div>
+                            <label for="vol">Volume (between 0 and 50):</label>
+                            <input type="range" id="vol" name="vol" min="0" max="50">
+                            <div class="box-word">
+                                <p>What are our best products?</p>
+                            </div>
+                            <div class="name-mid-div-chld-2">
+                                <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+                                <label for="vehicle1">Web-Design</label>
+                                <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                                <label for="vehicle2">SASS</label><br>
+                            </div>
+                            <div class="box-word">
+                                <p>Send a message to us</p>
+                            </div>
+                            <textarea rows="4" cols="50" name="comment" form="usrform">
+                                Enter text here...
+                            </textarea>
+                            <div class="button-form-box">
+                                <button>SEND</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
