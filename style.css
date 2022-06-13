@@ -374,6 +374,36 @@ body{
     border-radius: 7px;
     color: white;
 }
+.button-form-box{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 1em 0em 1em 0em;
+}
+.button-form-box>button{
+    width: 50%;
+    background-color: var(--color-three);
+    color: var(--font-color);
+    font-family: var(--font--two);
+    border-radius: 7px;
+    padding: 25px 15px;
+}
+.button-form-box>button:hover{
+    background-color: var(--color-four);
+    color: var(--font-color);
+    font-family: var(--font--two);
+    border-radius: 7px;
+    padding: 25px 15px;
+    color: white;
+}
+.button-form-box>button:focus{
+    background-color: var(--color-four);
+    color: var(--font-color);
+    font-family: var(--font--two);
+    border-radius: 7px;
+    padding: 25px 15px;
+    color: white;
+}
 
 @media only screen and (max-width: 1200px) {
 .box{
