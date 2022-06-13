@@ -212,7 +212,8 @@ body{
     flex-direction: row;
     width: 100%;
     padding: 5px 0px 5px 0px;
-    align-items: baseline;
+    align-items: center;
+    justify-content: center;
 }
 .name-mid-div-chld-2>input{
     background-color: var(--font-color-3);
@@ -220,6 +221,8 @@ body{
     border: 0px solid;
     border-radius: 7px;
     color: white;
+    width: 24px;
+    height: 24px;
 }
 .name-mid-div-chld-2>input:hover{
     background-color: var(--color-four);
@@ -235,7 +238,42 @@ body{
     border-radius: 7px;
     color: white;
 }
-.name-mid-div-chld-2>::placeholder{
+.name-mid-div-chld-3>::placeholder{
+    color: rgba(255, 255, 255, 0.751);
+}
+.name-mid-div-chld-3{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+    align-items: center;
+    justify-content: center;
+}
+.name-mid-div-chld-3>input{
+    background-color: var(--font-color-3);
+    padding: 10px 5px 10px 5px;
+    margin: 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+    width: 24px;
+    height: 24px;
+}
+.name-mid-div-chld-3>input:hover{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld-3>:focus{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld-3>::placeholder{
     color: rgba(255, 255, 255, 0.751);
 }
 .checksum{
@@ -307,8 +345,35 @@ body{
 .hot>::placeholder{
     color: rgba(255, 255, 255, 0.751);
 }
-
-
+.boxing{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+.boxing>input{
+    width: 100%;
+}
+.name-mid-div-chld-2>textarea{
+    padding: 10px 5px 10px 5px;
+    color: var(--font-color);
+    background-color: var(--color-three);
+    border: 0px solid blue;
+    border-radius: 7px;
+    width: 100%;
+}
+.name-mid-div-chld-2>textarea:hover{
+    padding: 10px 5px 10px 5px;
+    background-color: var(--color-four);
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
+.name-mid-div-chld-2>:focus{
+    background-color: var(--color-four);
+    padding: 10px 5px 10px 5px;
+    border: 0px solid;
+    border-radius: 7px;
+    color: white;
+}
 
 @media only screen and (max-width: 1200px) {
 .box{
