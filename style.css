@@ -45,6 +45,16 @@ body{
     box-shadow: 5px 5px 50px 10px rgba(77, 77, 77, 0.281);
     flex-wrap: nowrap;
 }
+.box-word{
+    font-family: var(--font--one);
+}
+.box-word>label{
+    font-family: var(--font--two);
+}
+#font-two{
+    font-family: var(--font--two);
+    margin: 10px 0px;
+}
 .box-left{
     width: 30%;
     background-color:var(--color-three);
@@ -93,6 +103,7 @@ body{
     display: flex;
     justify-content: flex-start;
     color: var(--font-color-3);
+    font-family: var(--font--one);
     font-size: 1.2em;
 }
 .form-box{
@@ -110,6 +121,8 @@ body{
     display: flex;
     width: 100%;
     flex-direction: column;
+    font-family: var(--font--two);
+    margin: 10px 0px 0px 0px;
 }
 .name-first-div>input{
     background-color: var(--color-three);
@@ -139,6 +152,8 @@ body{
     display: flex;
     width: 100%;
     flex-direction: column;
+    font-family: var(--font--two);
+    margin: 10px 0px;
 }
 .name-second-div>input{
     background-color: var(--color-three);
@@ -179,6 +194,8 @@ body{
     display: flex;
     flex-direction: column;
     width: 100%;
+    font-family: var(--font--two);
+    margin: 0px 0px 10px 0px;
 }
 .name-mid-div-chld>input{
     background-color: var(--color-three);
@@ -206,11 +223,12 @@ body{
 }
 .name-mid-div-chld-2{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    padding: 5px 0px 5px 0px;
     align-items: center;
     justify-content: center;
+    font-family: var(--font--two);
+    margin: 10px 0px;
 }
 .name-mid-div-chld-2>input{
     background-color: var(--font-color-3);
@@ -276,8 +294,8 @@ body{
 .checksum{
     display: flex;
     flex-direction: column;
-    width: 15%;
-    margin: 0px 25px 0px 0px;
+    width: 100%;
+    margin: 0px 0px 10px 0px;
 }
 .check{
     background-color: var(--color-three);
@@ -314,9 +332,10 @@ body{
     color: rgba(255, 255, 255, 0.751);
 }
 .hot{
-    width: 90%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin: 0px 0px 10px 0px;
 }
 .hot>input{
     background-color: var(--color-three);
@@ -400,6 +419,15 @@ body{
     border-radius: 7px;
     padding: 25px 15px;
     color: white;
+}
+.name-mid-div-chld-4{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font--two);
+    margin: 10px 0px;
 }
 
 @media only screen and (max-width: 1200px) {
