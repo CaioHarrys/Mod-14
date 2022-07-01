@@ -1,22 +1,49 @@
 function vascoM() {
     var nome = document.getElementById("nome").value;
     if (nome==null || nome=="") {
-        alert("Escreva um Nome valido")
+        alert("Escreva um Nome valido");
+        console.log("Campo de Nome preenchido incorretamente.");
         return false;
-    }
+    } else{
+        console.log("Campo de Nome preenchido com sucesso!");
+        }
     var sobrenome = document.getElementById("sobrenome").value;
     if (sobrenome==null || sobrenome=="") {
-        alert("Escreva um Sobrenome valido")
+        alert("Escreva um Sobrenome valido");
+        console.log("Campo de Sobrenome preenchido incorretamente.");
         return false;
+    } else {
+        console.log("Campo de Sobrenome preenchido corretamente!");
     }
-    var idnumero = parseInt(document.getElementById("idnumero").value);
-    if (isNaN(idnumero) || idnumero <= 0 ) {
-        alert("Digite um Numero Valido");
+    var idNumero = document.getElementById("idNumero").value;
+    if (idNumero.length < 11 || idNumero.length > 11 ||isNaN(idNumero)) {
+        alert("Digite um CPF Valido");
+        console.log("Campo CPF preenchido incorretamente.");
         return false;
-      }
+    } else {
+            console.log("Campo CPF preenchido corretamente!");
+        }
+      var DD = document.getElementById("DD").value;
+      if (isNaN(DD) || DD.length < 2 || DD.length > 2 ||DD==null || DD=="") {
+          alert("Digite um DD Valido");
+          console.log("Campo DD preenchido incorretamente.");
+          return false;
+        } else {
+            console.log("Campo DD preenchido corretamente!");
+        }
     var phone = document.getElementById("phone").value;
-    if (isNaN(phone) ||phone==null || phone==""|| phone <= 0) {
-        alert("Digite um Telefone valido")
+    if (isNaN(phone) ||phone==null || phone==""|| phone <= 0 || phone.length < 9 || phone.length > 9) {
+        alert("Digite um Telefone valido");
+        console.log("Campo de Telefone preenchido incorretamente.");
         return false;
+      } else {
+        console.log("Campo de Telefone Preenchido Corretamente!");
+      }
+  }
+
+  function deliver(){
+    if (vascoM()===true) {
+        alert("Parabens");
+        console.log('✅ function returns true');
       }
   }
