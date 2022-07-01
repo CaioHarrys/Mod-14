@@ -3,7 +3,6 @@ function vascoM() {
     if (nome==null || nome=="") {
         alert("Escreva um Nome valido");
         console.log("Campo de Nome preenchido incorretamente.");
-        return false;
     } else{
         console.log("Campo de Nome preenchido com sucesso!");
         }
@@ -11,7 +10,6 @@ function vascoM() {
     if (sobrenome==null || sobrenome=="") {
         alert("Escreva um Sobrenome valido");
         console.log("Campo de Sobrenome preenchido incorretamente.");
-        return false;
     } else {
         console.log("Campo de Sobrenome preenchido corretamente!");
     }
@@ -19,7 +17,6 @@ function vascoM() {
     if (idNumero.length < 11 || idNumero.length > 11 ||isNaN(idNumero)) {
         alert("Digite um CPF Valido");
         console.log("Campo CPF preenchido incorretamente.");
-        return false;
     } else {
             console.log("Campo CPF preenchido corretamente!");
         }
@@ -27,7 +24,6 @@ function vascoM() {
       if (isNaN(DD) || DD.length < 2 || DD.length > 2 ||DD==null || DD=="") {
           alert("Digite um DD Valido");
           console.log("Campo DD preenchido incorretamente.");
-          return false;
         } else {
             console.log("Campo DD preenchido corretamente!");
         }
@@ -35,15 +31,7 @@ function vascoM() {
     if (isNaN(phone) ||phone==null || phone==""|| phone <= 0 || phone.length < 9 || phone.length > 9) {
         alert("Digite um Telefone valido");
         console.log("Campo de Telefone preenchido incorretamente.");
-        return false;
       } else {
         console.log("Campo de Telefone Preenchido Corretamente!");
-      }
-  }
-
-  function deliver(){
-    if (vascoM()===true) {
-        alert("Parabens");
-        console.log('✅ function returns true');
       }
   }
