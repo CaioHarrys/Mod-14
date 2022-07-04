@@ -1,7 +1,7 @@
 function vascoM() {
     var nome = document.getElementById("nome").value;
     if (nome==null || nome=="") {
-        alert("Escreva um Nome valido");
+        alert("Escreva um Nome valido.");
         console.log("Campo de Nome preenchido incorretamente.");
     } else{
         console.log("Campo de Nome preenchido com sucesso!");
