@@ -39,6 +39,22 @@ body{
     background-color: var(--color-one);
 }
 /*Section-1*/
+#error_message{
+    width: 50%;
+    align-self: center;
+    margin-bottom: 20px;
+    background: #e44045;
+    padding: 15px 20px;
+    text-align: center;
+    font-family: var(--font--two);
+    color: var(--color-one);
+    border-radius: 7px;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+  .hide {
+    display:none;
+ }
 .box-pat{
     display: flex;
     justify-content: center;
@@ -130,12 +146,9 @@ body{
     display: flex;
     width: 100%;
     flex-direction: column;
-<<<<<<< HEAD
     margin: 10px 0px;
-=======
     font-family: var(--font--two);
     margin: 10px 0px 0px 0px;
->>>>>>> 5fe214d5e0c111efda022758e1bd02e2fcdb7331
 }
 .name-first-div>input{
     background-color: var(--color-three);
@@ -165,10 +178,7 @@ body{
     display: flex;
     width: 100%;
     flex-direction: column;
-<<<<<<< HEAD
-=======
     font-family: var(--font--two);
->>>>>>> 5fe214d5e0c111efda022758e1bd02e2fcdb7331
     margin: 10px 0px;
 }
 .name-second-div>input{
@@ -356,6 +366,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0px 0px 10px 0px;
+    font-family: var(--font--two);
 }
 .hot>input{
     background-color: var(--color-three);
@@ -414,6 +425,7 @@ body{
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-direction: column;
     margin: 1em 0em 1em 0em;
 }
 .button-form-box>button{
@@ -423,6 +435,7 @@ body{
     font-family: var(--font--two);
     border-radius: 7px;
     padding: 25px 15px;
+    align-self: center;
 }
 .button-form-box>button:hover{
     background-color: var(--color-four);

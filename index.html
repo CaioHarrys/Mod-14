@@ -24,14 +24,14 @@
                     </div>
                 </div>
                 <div class="box-right">
-                    <div class="form-box">
+                    <div class="form-box" id="form">
                         <div class="box-title">
                             <p>Registration Form</p>
                         </div>
                         <div class="name-mid-div">
                             <div class="name-first-div">
                                 <label for="#last">Firstname</label>
-                                <input type="text" id="nome" placeholder="Firstname">
+                                <input type="text" id="nome" placeholder="Firstname"> 
                             </div>
                             <div class="name-second-div">
                                 <label for="#last">Lastname</label>
@@ -48,7 +48,7 @@
                             <div class="name-mid-div-chld-2">
                                 <div class="hot">
                                     <label for="#numberid">Mobile Number</label>
-                                    <input type="tel" id="phone" name="phone" placeholder="9 9271-2314" required>
+                                    <input type="tel" id="phone" name="phone" placeholder="992712314" required>
                                 </div>
                             </div>
                             <div class="box-word">
@@ -96,7 +96,8 @@
                                 </textarea>
                             </div>
                             <div class="button-form-box">
-                                <button onclick="vascoM();deliver()" type="submit" value="Submit">
+                                <div class="hide" id="error_message"></div>
+                                <button onclick="validate()" type="submit" value="Submit">
                                     <p>SEND</p>
                                 </button>
                             </div>
